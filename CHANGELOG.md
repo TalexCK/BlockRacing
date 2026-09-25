@@ -1,3 +1,14 @@
+### 2026.9.25 - BlockRacing 26.3.1
+
+- 更新游戏版本至 Minecraft Java 26.3，并要求 Paper 26.3（Java 25）
+- Paper API 依赖改为 26.3 版本区间（Paper 26.3 仍处于 ALPHA 渠道，稳定版发布后应固定构建号）
+- 添加杨木（Poplar）全套木制方块、橙色/红色/黄色杨树树叶、红灌木、层孔菇至中等方块库
+- 添加麦秆床至简单方块库
+- 添加 16 色羊毛台阶/楼梯与混凝土台阶/楼梯至染色方块库
+- 从 Mojang 26.3 官方资源重新生成简体中文和英文方块翻译
+- `/locatebiome` 与 `/locatestructure` 支持以 `#` 开头补全标签（如 `#village`、`#abandoned_camp`），自动包含 26.3 新增的斑驳森林群系与废弃营地结构
+- 新增 26.3 方块与定位补全测试
+
 ### 2026.7.27 - BlockRacing 26.2.1
 
 - 更新游戏版本至 Minecraft Java 26.2，并要求 Java 25 与 Paper 26.2

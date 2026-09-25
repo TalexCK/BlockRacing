@@ -1,6 +1,5 @@
 package top.lqsnow.blockracing.commands;
 
-import io.papermc.paper.registry.RegistryAccess;
 import io.papermc.paper.registry.RegistryKey;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -12,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import top.lqsnow.blockracing.Main;
 import top.lqsnow.blockracing.managers.Message;
+import top.lqsnow.blockracing.utils.LocateCompletions;
 
 import java.util.List;
 
@@ -45,12 +45,6 @@ public class LocateBiome implements CommandExecutor, TabCompleter {
         if (strings.length != 1) {
             return List.of();
         }
-        String prefix = strings[0].toLowerCase();
-        return RegistryAccess.registryAccess().getRegistry(RegistryKey.BIOME).keyStream()
-                .filter(key -> key.getNamespace().equals("minecraft"))
-                .map(key -> key.getKey())
-                .filter(key -> key.startsWith(prefix))
-                .sorted()
-                .toList();
+        return LocateCompletions.complete(RegistryKey.BIOME, strings[0]);
     }
 }
