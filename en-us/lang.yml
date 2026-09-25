@@ -184,7 +184,7 @@ rule-book:
     - "&b&lModes & Scoring\n\n&0Normal: 1 point and a stack sent to the opponent.\n\nRacing: shared targets, with no item gifts.\n\nSpeed: 3 points per target."
     - "&b&lMenu Features\n\n&0Press Shift+F for the menu.\n\nTeam Chest: shared items\nWaypoints: save/teleport\nReroll: online team vote\nLocate: costs points\nRandom TP: first use free\nSpeed Supplies: 5 points"
     - "&b&lCommands 1/2\n\n&0/language change language\n/randomteam balance teams\n/block <red|blue> <index> show a full target name\n/tp <player> teammate teleport\n/shout <message> global chat"
-    - "&b&lCommands 2/2\n\n&0/menu open menu\n/waypoint remove <index>\n/locatebiome <biome>\n/locatestructure <structure>\n/restartgame vote to reset"
+    - "&b&lCommands 2/2\n\n&0/menu open menu\n/waypoint remove <index>\n/locatebiome <biome|#tag>\n/locatestructure <structure|#tag>\n/restartgame vote to reset"
 
 # Notices
 notice:
@@ -288,4 +288,4 @@ chat:
   team-hint: "&8[&bTip&8] &7You are in team chat. Use &f/shout message&7 or start with &f@ / ! &7to message everyone."
 
 # Internal compatibility value. Do not edit this manually.
-lang-version: 26.2.1
+lang-version: 26.3.1

@@ -39,4 +39,4 @@ max-team-waypoint-num: 8
 max-roll-count: 3
 
 # 内部兼容版本，请勿手动修改
-config-version: 26.2.1
+config-version: 26.3.1

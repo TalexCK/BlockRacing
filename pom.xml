@@ -6,7 +6,7 @@
 
     <groupId>lq.snow</groupId>
     <artifactId>BlockRacing</artifactId>
-    <version>26.2.1</version>
+    <version>26.3.1</version>
 
     <properties>
         <maven.compiler.release>25</maven.compiler.release>
@@ -24,7 +24,8 @@
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>26.2.build.84-stable</version>
+            <!-- Paper 26.3 is still on the ALPHA channel; pin an exact build (e.g. 26.3.build.N-stable) once one is published. -->
+            <version>[26.3.build.0,26.4)</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
