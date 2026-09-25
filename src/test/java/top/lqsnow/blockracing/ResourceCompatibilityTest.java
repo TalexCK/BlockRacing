@@ -97,6 +97,26 @@ class ResourceCompatibilityTest {
         )));
     }
 
+    @Test
+    void includesPreviouslyMissingBlocks() throws Exception {
+        Set<String> configured = new HashSet<>();
+        for (String resource : BLOCK_LISTS) {
+            configured.addAll(readLines(resource));
+        }
+        assertTrue(configured.containsAll(List.of(
+                "BIRCH_HANGING_SIGN",
+                "STRIPPED_ACACIA_LOG",
+                "LAPIS_ORE",
+                "DIAMOND_BLOCK",
+                "NETHERITE_BLOCK",
+                "TUBE_CORAL_FAN",
+                "DEAD_HORN_CORAL_BLOCK",
+                "PINK_WOOL",
+                "BLACK_GLAZED_TERRACOTTA",
+                "WHITE_CONCRETE"
+        )));
+    }
+
     private static List<String> readLines(String resource) throws Exception {
         try (InputStream input = ResourceCompatibilityTest.class.getClassLoader().getResourceAsStream(resource)) {
             assertNotNull(input, () -> "Missing test resource " + resource);
